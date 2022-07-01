@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>生日快乐</title>
-    /!--不要看我的垃圾代码啦--/
+    <!--不要看我的垃圾代码啦-->
     <style type="text/css">
         body{
             background-image: url(birthday.jpg);
             background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
     </style>
+
 </head>
 
 <body>
-     <img src="birthday.png" alt="birthday" referrerpolicy="no-referrer" >
+<a href="javascript:closeImg()">
+    <p style="text-align: center;">
+        <img src="birthday.png" id="img1" referrerpolicy="no-referrer" style="left:50%;">
+    </p>
+</a>
+<script type="text/javascript">
+    function closeImg() {
+	var allImg = document.getElementsByTagName("img")
+	for(var i=0;i<allImg.length;i++){
+
+		allImg[0].style.display="none";
+	}
+	
+	alert("hello");
+    }
+    </script>
 </body>
 </html>
